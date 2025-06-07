@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تهنئة العيد الذكية</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="toast" style="
+      visibility: hidden;
+      opacity: 0;
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      z-index: 9999;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    ">
+  </div>
+  <div class="container">
+
+    <h1 class="header_title_">3awachrkom Mobarika jami3an ♥ rashid ♥</h1>
+    <h1>🤖 تهنئتك الذكية بالعيد</h1>
+
+    <input type="text" id="name" placeholder="اكتب اسم الشخص" />
+
+    <select id="style">
+      <option value="funny">فكاهي</option>
+      <option value="serious">جدي وراقي</option>
+      <option value="spiritual">روحاني</option>
+      <option value="special">عزيز وغالي</option>
+      <option value="random">🎲 عشوائي</option>
+    </select>
+
+    <button onclick="generateGreeting()">✨ أنشئ التهنئة</button>
+
+    <div id="result" class="output"></div>
+
+    <button onclick="copyToClipboard()">📋 نسخ التهنئة</button>
+    <a id="whatsappLink" target="_blank">📤 إرسال عبر واتساب</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
